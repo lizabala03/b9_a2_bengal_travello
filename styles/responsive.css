@@ -1,0 +1,73 @@
+/* Add more specific media query for better control */
+@media screen and (max-width: 600px) {
+    /* Navbar styles */
+.header-section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.nav-items {
+    display: none; /* Hide nav items by default */
+}
+
+.fa-bars {
+    display: block; /* Show hamburger icon */
+}
+
+/* Banner section */
+.banner-section form {
+    flex-direction: column; /* Align form items vertically */
+    gap: 16px; /* Add spacing between form elements */
+}
+
+/* Popular tour section */
+.popular-tours {
+    flex-direction: column-reverse; /* Reverse order of flex items */
+}
+
+.tour-txt,
+.tour-img {
+    width: 100%; /* Make text and image full width */
+    margin-right: 0; /* Remove right margin for image */
+}
+    /* Hide nav items initially */
+    .nav-items {
+        display: none;
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Make nav items full width */
+        text-align: center; /* Center text */
+        position: absolute;
+        top: 80px; /* Adjust based on your header height */
+        left: 0;
+        background-color: #fff; /* Adjust background color */
+        z-index: 1;
+    }
+
+    /* Add padding to nav items */
+    .nav-items a {
+        padding: 10px;
+    }
+
+    /* Show nav items when class is added */
+    .nav-items.show {
+        display: flex;
+    }
+
+    /* Show hamburger icon */
+    .fa-bars {
+        display: block;
+        cursor: pointer; /* Add pointer cursor */
+    }
+
+    /* Add spacing between form elements */
+    .banner-section form {
+        gap: 16px;
+    }
+
+    /* Adjust styling for other elements as needed */
+    .banner-heading {
+        font-size: 32px; /* Example adjustment for banner heading */
+    }
+
+    /* Additional responsive styles can be added here */
+}
